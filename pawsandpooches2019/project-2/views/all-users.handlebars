@@ -1,0 +1,32 @@
+<main class="all-list">
+  <div class="container">
+  
+    <div class="row center-align">
+      <h2>All Users</h2>
+      <h5>Check out all the users that have their pets up for adoption</h5>
+    </div>
+  
+    <div class="row">
+      <div class="col s12 m6 offset-m3">
+        <table class="z-depth-4">
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>City</th> 
+          </tr>
+          {{#each users}}
+            <tr>
+              <td></td>
+              <td><a href="/user/{{this.id}}">{{this.name}}</a></td>
+              <td>{{this.city}}</td>
+            </tr>
+          </a>
+          {{/each}}
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Page-specific JS -->
+  <script src="/js/user.js"></script>
+</main>
